@@ -8,20 +8,20 @@ void test1(void)
     float  f = 10.12f;
     double d = 10.12;
 
-    std::cout << std::fixed << f 
-	      << " " << d << std::endl;
+    std::cout << std::fixed << f
+              << " "<< d << std::endl;
     // 10.120000 10.120000
 
-    std::cout << std::fixed << to_string<float>(f) 
-	      << " " << to_string<double>(d) << std::endl;
+    std::cout << std::fixed << j2::to_string<float>(f)
+              << " " << j2::to_string<double>(d) << std::endl;
     // 10.119999886 10.11999999999999922
 
-    std::cout << std::fixed << to_string<float>(f, 2) 
-	      << " " << to_string<double>(d, 2) << std::endl;
+    std::cout << std::fixed << j2::to_string<float>(f, 2)
+              << " " << j2::to_string<double>(d, 2) << std::endl;
     // 10.12 10.12
 
-    std::cout << std::fixed << to_string<float>(f,10) 
-	      << " " << to_string<double>(d,20) << std::endl;
+    std::cout << std::fixed << j2::to_string<float>(f,10)
+              << " " << j2::to_string<double>(d,20) << std::endl;
     // 10.1199998856 10.11999999999999921840
 }
 ```
@@ -45,7 +45,7 @@ void test2()
 
 void test_double(double d1, double d2, long long precision)
 {
-    bool ret = is_equal<double>(d1, d2, precision);
+    bool ret = j2::is_equal<double>(d1, d2, precision);
 
     if (ret)  {
         std::cout << "[equal] ";
@@ -55,13 +55,16 @@ void test_double(double d1, double d2, long long precision)
 
     std::cout
         << std::fixed
-        << to_string<double>(d1, precision)
+        << j2::to_string<double>(d1, precision)
         << " "
-        << to_string<double>(d2, precision)
+        << j2::to_string<double>(d2, precision)
         << std::endl;
 }
 ```
 
+## License
+- to_string-floating-type is under MIT License. 
+- It is a part of JayTwo(j2) Library. 
 
 
 

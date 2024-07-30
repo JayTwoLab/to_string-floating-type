@@ -1,5 +1,5 @@
-#ifndef TO_STRING_H
-#define TO_STRING_H
+#ifndef JAYTWO_TO_STRING_H
+#define JAYTWO_TO_STRING_H
 
 #include <iostream>
 #include <string>
@@ -9,7 +9,7 @@
 #include <type_traits>
 #include <limits>
 
-// namespace {{
+ namespace j2 {
 
 template <typename T>
 std::string to_string(typename std::enable_if< std::is_floating_point<T>::value, T >::type value)
@@ -59,6 +59,6 @@ bool is_equal(T value1, T value2)
     return false;
 }
 
-// namespace }}
+} // end of namespace
 
 #endif // TO_STRING_H
