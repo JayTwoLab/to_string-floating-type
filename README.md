@@ -29,20 +29,6 @@ void test1(void)
 - C++ function to compare floating type to string ```is_equal<T>```
 
 ```cpp
-void test2()
-{
-    test_double(10.12, 10.12, 2); // [equal] 10.12 10.12
-    test_double(10.12, 10.1, 1); // [equal] 10.1 10.1
-    test_double(10.12, 10.12, 3); // [equal] 10.120 10.120
-    test_double(10.12, 10.121, 3); // [not equal] 10.120 10.121
-    test_double(10.12, 10.121, 20); // [not equal] 10.11999999999999921840 10.12100000000000044054
-    test_double(10.12, 10.1201, 20); // [not equal] 10.11999999999999921840 10.12010000000000076170
-    test_double(10.12, 10.12001, 20); // [not equal] 10.11999999999999921840 10.12001000000000061618
-    test_double(10.12, 10.120001, 20); // [not equal] 10.11999999999999921840 10.12000100000000024636
-    test_double(10.12, 10.1200001, 20);  // [not equal] 10.11999999999999921840 10.12000010000000038701
-    test_double(10.12, 10.12, 10); // [equal] 10.1200000000 10.1200000000
-}
-
 void test_double(double d1, double d2, long long precision)
 {
     bool ret = j2::is_equal<double>(d1, d2, precision);
@@ -59,6 +45,20 @@ void test_double(double d1, double d2, long long precision)
         << " "
         << j2::to_string<double>(d2, precision)
         << std::endl;
+}
+
+void test2()
+{
+    test_double(10.12, 10.12, 2); // [equal] 10.12 10.12
+    test_double(10.12, 10.1, 1); // [equal] 10.1 10.1
+    test_double(10.12, 10.12, 3); // [equal] 10.120 10.120
+    test_double(10.12, 10.121, 3); // [not equal] 10.120 10.121
+    test_double(10.12, 10.121, 20); // [not equal] 10.11999999999999921840 10.12100000000000044054
+    test_double(10.12, 10.1201, 20); // [not equal] 10.11999999999999921840 10.12010000000000076170
+    test_double(10.12, 10.12001, 20); // [not equal] 10.11999999999999921840 10.12001000000000061618
+    test_double(10.12, 10.120001, 20); // [not equal] 10.11999999999999921840 10.12000100000000024636
+    test_double(10.12, 10.1200001, 20);  // [not equal] 10.11999999999999921840 10.12000010000000038701
+    test_double(10.12, 10.12, 10); // [equal] 10.1200000000 10.1200000000
 }
 ```
 
