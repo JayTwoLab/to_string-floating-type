@@ -37,10 +37,10 @@ bool is_equal(T value1, T value2, long long precision)
 
     if ( str1 == str2 )
     {
-        std::cout << " equal value " << str1 << " " << str2 << std::endl;
+        // std::cout << " equal value " << str1 << " " << str2 << std::endl;
         return true;
     }
-    std::cout << " not equal value " << str1 << " " << str2 << std::endl;
+    // std::cout << " not equal value " << str1 << " " << str2 << std::endl;
     return false;
 }
 
@@ -52,10 +52,10 @@ bool is_equal(T value1, T value2)
 
     if ( str1 == str2 )
     {
-        std::cout << "[string][is_same] same value " << str1 << " " << str2 << std::endl;
+        // std::cout << "[string][is_same] same value " << str1 << " " << str2 << std::endl;
         return true;
     }
-    std::cout << "[string][is_same] not same value " << str1 << " " << str2 << std::endl;
+    // std::cout << "[string][is_same] not same value " << str1 << " " << str2 << std::endl;
     return false;
 }
 
