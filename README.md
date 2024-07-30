@@ -8,16 +8,20 @@ void test1(void)
     float  f = 10.12f;
     double d = 10.12;
 
-    std::cout << std::fixed << f << " "<< d << std::endl;
+    std::cout << std::fixed << f 
+	      << " " << d << std::endl;
     // 10.120000 10.120000
 
-    std::cout << std::fixed << to_string<float>(f) << " " << to_string<double>(d) << std::endl;
+    std::cout << std::fixed << to_string<float>(f) 
+	      << " " << to_string<double>(d) << std::endl;
     // 10.119999886 10.11999999999999922
 
-    std::cout << std::fixed << to_string<float>(f, 2) << " " << to_string<double>(d, 2) << std::endl;
+    std::cout << std::fixed << to_string<float>(f, 2) 
+	      << " " << to_string<double>(d, 2) << std::endl;
     // 10.12 10.12
 
-    std::cout << std::fixed << to_string<float>(f,10) << " " << to_string<double>(d,20) << std::endl;
+    std::cout << std::fixed << to_string<float>(f,10) 
+	      << " " << to_string<double>(d,20) << std::endl;
     // 10.1199998856 10.11999999999999921840
 }
 ```
