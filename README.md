@@ -63,7 +63,7 @@ void test_double(double d1, double d2, long long precision)
 ```
 
 ## License
-- to_string-floating-type is under MIT License. 
+- to_string-floating-type is under MIT License. https://github.com/j2doll/to_string-floating-type
 - It is a part of JayTwo(j2) Library. 
 
 
