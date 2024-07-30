@@ -1,6 +1,6 @@
 # to_string-floating-type
 
-- C++ function to convert floating type to string
+- C++ function to convert floating type to string ```to_string<T>```
 
 ```cpp
 void test1(void)
@@ -26,7 +26,7 @@ void test1(void)
 }
 ```
 
-- C++ function to compare floating type to string
+- C++ function to compare floating type to string ```is_equal<T>```
 
 ```cpp
 void test2()
